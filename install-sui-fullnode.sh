@@ -22,7 +22,7 @@ cd $HOME
 echo -e "\e[1m\e[32m1.1 Install list of dependencies \e[0m" && sleep 1
 sudo apt update -y
 sudo apt upgrade -y
-sudo apt jq -y
+sudo apt install jq -y
 
 echo -e "\e[1m\e[32m1.1 Installing Docker... \e[0m" && sleep 1
 sudo apt-get install ca-certificates curl gnupg lsb-release wget -y
