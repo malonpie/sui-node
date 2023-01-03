@@ -50,6 +50,7 @@ wget https://raw.githubusercontent.com/MystenLabs/sui/main/docker/fullnode/docke
 
 echo -e "\e[1m\e[32m2.3 Download fullnode.yaml \e[0m" && sleep 1
 wget https://raw.githubusercontent.com/MystenLabs/sui/main/crates/sui-config/data/fullnode-template.yaml
+sed -i -e "13,\$d" fullnode-template.yaml
 
 echo -e "\e[1m\e[32m2.4 Download genesis.blob \e[0m" && sleep 1
 wget -O genesis.blob https://github.com/MystenLabs/sui-genesis/raw/main/devnet/genesis.blob
