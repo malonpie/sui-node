@@ -60,7 +60,7 @@ echo -e "\e[1m\e[32m3. Run Sui \e[0m" && sleep 1
 
 echo -e "\e[1m\e[32m3.1 Download testnet image \e[0m" && sleep 1
 IMAGE="mysten/sui-node:2698314d139a3018c2333ddaa670a7cb70beceee"
-sed -i.bak "s|image:.*|image: $IMAGE|" $HOME/sui/docker-compose.yaml
+sed -i.bak "s|image:.*|image: $IMAGE|" $HOME/testnet/docker-compose.yaml
 
 docker compose pull
 
