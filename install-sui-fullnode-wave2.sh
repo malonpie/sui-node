@@ -49,10 +49,10 @@ echo -e "\e[1m\e[32m2.2 Download docker-compose.yaml \e[0m" && sleep 1
 wget https://raw.githubusercontent.com/MystenLabs/sui/main/docker/fullnode/docker-compose.yaml
 
 echo -e "\e[1m\e[32m2.3 Download fullnode.yaml \e[0m" && sleep 1
-wget -O fullnode.yaml https://raw.githubusercontent.com/MystenLabs/sui/main/crates/sui-config/data/fullnode-template.yaml
+wget -O https://raw.githubusercontent.com/MystenLabs/sui/main/crates/sui-config/data/fullnode-template.yaml
 
 echo -e "\e[1m\e[32m2.4 Download genesis.blob \e[0m" && sleep 1
-wget -O genesis.blob https://github.com/MystenLabs/sui-genesis/raw/main/testnet/genesis.blob
+wget -O https://github.com/MystenLabs/sui-genesis/raw/main/testnet/genesis.blob
 
 echo "=================================================="
 
